@@ -1,13 +1,15 @@
-name: main
+name: production
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    tags:
+      - v*
 
 jobs:
   release_image:
     uses: spuxx1701/ci-cd/.github/workflows/release_image.yml@v2.0
+    with:
+      dockerfile: Dockerfile
+      latest: true
     secrets:
       dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
