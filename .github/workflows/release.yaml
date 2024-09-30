@@ -3,11 +3,11 @@ name: release
 on:
   push:
     tags:
-      - v*
+    - v*
 
 jobs:
-  release_image:
-    uses: spuxx1701/ci-cd/.github/workflows/release_image.yml@v2.0
+  build_and_push:
+    uses: spuxx1701/ci-cd/.github/workflows/build_and_push_image.yml@v4.1.0
     with:
       dockerfile: Dockerfile
       latest: true
