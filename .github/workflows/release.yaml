@@ -8,8 +8,5 @@ on:
 jobs:
   build_and_push:
     uses: spuxx1701/ci-cd/.github/workflows/build_and_push_image.yml@v4.1.0
-    with:
-      dockerfile: Dockerfile
-      latest: true
     secrets:
       dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
