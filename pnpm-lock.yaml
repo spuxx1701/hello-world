@@ -12,6 +12,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
 
+  apps/nginx-hello-world: {}
+
 packages:
 
   prettier@3.3.3:
