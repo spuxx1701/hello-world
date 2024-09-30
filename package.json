@@ -6,9 +6,13 @@
   "packageManager": "pnpm@9.6.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier-check": "prettier --check .",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
 }
