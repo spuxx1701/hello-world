@@ -1,4 +1,4 @@
-name: Push release build (nginx-hello-world)
+name: Release Pipeline (nginx-hello-world)
 
 on:
   workflow_dispatch:
