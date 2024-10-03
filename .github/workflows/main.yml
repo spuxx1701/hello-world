@@ -11,7 +11,7 @@ jobs:
     uses: spuxx1701/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
     with:
       path: ./apps/nginx-hello-world
-      tagging_pattern: branch
+      tag: branch
       latest: false
       dockerhub_repository: nginx-hello-world
     secrets:
