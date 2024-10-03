@@ -9,7 +9,7 @@ on:
 jobs:
   release_staging_nginx_hello_world:
     name: Push staging build (nginx-hello-world)
-    uses: spuxx1701/ci-cd/.github/workflows/pnpm_build_and_push.yml@4.1.0
+    uses: spuxx1701/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
     with:
       path: apps/nginx-hello-world
       tagging_pattern: branch
