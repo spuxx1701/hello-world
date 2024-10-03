@@ -1,0 +1,17 @@
+name: Push release build (nginx-hello-world)
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+    - "nginx-hello-world-*"
+
+jobs:
+  release:
+    uses: spuxx1701/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
+    with:
+      path: apps/nginx-hello-world
+      tagging_pattern: version
+      latest: true
+    secrets:
+      dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}

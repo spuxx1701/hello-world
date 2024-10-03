@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "nginx-hello-world",
   "version": "1.0.0",
   "description": "",
   "packageManager": "pnpm@9.6.0",
