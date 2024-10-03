@@ -13,6 +13,7 @@ jobs:
       path: ./apps/nginx-hello-world
       tagging_pattern: branch
       latest: false
+      dockerhub_repository: nginx-hello-world
     secrets:
       dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
 
